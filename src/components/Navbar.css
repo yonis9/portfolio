@@ -41,6 +41,7 @@
 
 @media only screen and (max-width: 767px) {
     .navbar {
+        padding-top: 70px;
         position: fixed;
         top: 0;
         height: auto;

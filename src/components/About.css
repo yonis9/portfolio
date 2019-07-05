@@ -110,4 +110,8 @@
     #aboutme p {
       width: 70%;
     }
+    #aboutme {
+      padding-top: 100px;
+    }
+    
   }

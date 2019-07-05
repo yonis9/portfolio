@@ -43,9 +43,11 @@ const Home = ( { openNav, windowWidth } ) => {
         <div id='home'>
             <Particles className='particles' params={particleOptions}/>
             { windowWidth < 768 ?
+            <div id='navbar-menu'>
               <div id='menu' onClick={openNav}>
                   <FontAwesomeIcon icon={faBars} size='2x' color='#95C623' />
              </div>
+            </div>
               : null    
                 }
           <h1 className='tracking-in-expand'>Hi, I'm <span>Yoni.</span> </h1>

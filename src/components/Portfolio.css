@@ -115,4 +115,7 @@
     .projects-grid {
       grid-template-columns: repeat(1, 350px);
     }
+    #portfolio {
+      padding-top: 100px;
+    }
   }
