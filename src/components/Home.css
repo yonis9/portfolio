@@ -1,0 +1,137 @@
+.tracking-in-expand {
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  .text-focus-in {
+	animation: text-focus-in 2s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+}
+
+@keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      text-align: center;
+    padding-top: 45vh;
+    width: 100%;
+    background:#364958;
+    min-height: 55vh;
+    color: #f2f2f2;
+  }
+
+  #home h1 {
+    font-size: 3em;
+   
+  }
+
+  #home h1 span {
+      color: #95C623;
+  }
+
+
+  .slide-bottom {
+    z-index: 1;
+    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-bottom {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100px);
+    }
+  }
+  #arrow{
+      position: absolute;
+    left: 50%;
+    top: 90%;
+    
+    transform: translate(-50%, -50%);
+  }
+  #more-arrows {
+    width: 75px;
+    height: 65px;
+  }
+  
+  #more-arrows:hover{
+    cursor: pointer;
+  }
+    #more-arrows:hover polygon {
+      
+       
+        fill: #95C623;
+        transition: all .2s ease-out;
+  }
+    #more-arrows:hover .arrow-bottom {
+          transform: translateY(-18px);
+        }
+  
+        #more-arrows:hover .arrow-top {
+          transform: translateY(18px);
+        }   
+    
+    
+    
+  
+  
+  polygon {
+    fill: #95C623;
+    transition: all .2s ease-out;
+  }
+    .arrow-middle {
+      opacity: 0.75;
+    }
+  
+    .arrow-top {
+      opacity: 0.5
+    }
+     
+
+    .particles {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#menu {
+  border-radius: 10px;
+  padding: 7px;
+  border: 3px solid #95C623;
+  z-index: 200;
+  top: 20px;
+ position: fixed;
+ right:  20px;
+  
+}
+
+#menu:hover {
+  cursor: pointer;
+}

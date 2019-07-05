@@ -1,0 +1,118 @@
+#portfolio {
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333
+}
+
+#portfolio h1 {
+    font-size: 2.5em;
+}
+
+.projects-grid {
+    justify-items: center;
+    grid-gap: 0;
+  justify-content: center;
+   display: grid;
+   grid-template-columns: repeat(2, 350px);
+}
+
+.project-container {
+    height: 180px;
+  
+      position: relative;
+  }
+
+  .project-container:hover  {
+    cursor: pointer;
+  }
+
+  .project-container img {
+    margin: 0;
+    height: 180px;
+   width: 350px;
+   transition: 0.5s ease;
+  }
+
+  .project-container:hover .project-description {
+    opacity: 1;
+  }
+
+  .project-description {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         margin:0;
+        background-color: white;
+        width: 350px;
+        height: 180px;
+        transition: .1s ease;
+        opacity: 0;
+        position: absolute;
+        top:0;
+
+  }
+
+  .text {
+  
+    color: #333;
+    
+    font-size: 0.8em;
+    transition: transform 0.3s ease-out,  color .2s linear;
+    transform: translateY(-40%);
+  
+  }
+
+  .project-container:hover .text{
+    transform: translateY(0)
+  }
+
+  .project-title {
+    font-size: 1.3em;
+  }
+  
+  .link a, .project-title{
+      color: #48E5C2;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .link {
+    bottom: 0;
+    border-radius: 50px;
+    width: 150px;
+    padding-top:5px;
+    padding-bottom:8px;
+    margin-top: 5%;
+    border: 2px solid #48E5C2;
+    transition: transform 0.3s ease-out, 0.3s;
+    transform: translateY(100%);
+    
+  }
+
+  .link:hover {
+    background: #48E5C2;
+    transition: 0.3s;
+  
+  }
+  .link a {
+    color: #333;
+  }
+  
+  .link:hover a {
+    transition: 0.3s;
+    color: white;
+  }
+
+  .project-container:hover .link {
+    transform: translateY(0)
+  }
+
+  @media only screen and (max-width: 700px) {
+    .projects-grid {
+      grid-template-columns: repeat(1, 350px);
+    }
+  }
