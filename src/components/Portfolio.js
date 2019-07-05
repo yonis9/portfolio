@@ -7,7 +7,7 @@ const Portfolio = () => {
             <h1 data-aos="fade-left">PORTFOLIO</h1>
             <div className='border' data-aos="fade-right"></div>
            <div className = 'projects-grid'>
-            <div className='project-container' data-aos="fade-right"> 
+            <div className='project-container' data-aos="zoom-in-up"> 
                 <img alt='project' src='https://i.imgur.com/2J1m1bt.png'/>
                 <div className='project-description'>   
                     <div className='text'>
@@ -20,7 +20,7 @@ const Portfolio = () => {
                      </div>
                   
              </div>
-             <div className='project-container' data-aos="fade-left">
+             <div className='project-container' data-aos="zoom-in-up">
                       <img  alt='project' src='https://i.ibb.co/fnNm7Zx/face.png'/>
                       <div className='project-description'>
                          
@@ -34,7 +34,7 @@ const Portfolio = () => {
                         </div>
                     </div>
             </div>
-            <div className='project-container' data-aos="fade-right">
+            <div className='project-container' data-aos="zoom-in-up">
                  <img  alt='project' src='https://i.ibb.co/bBSv7HL/robo.png'/>
                 <div className='project-description'>
                 
@@ -48,7 +48,7 @@ const Portfolio = () => {
                         </div>
                 </div> 
             </div>
-            <div className='project-container' data-aos="fade-left">
+            <div className='project-container' data-aos="zoom-in-up">
                 <img  alt='project' src='https://i.ibb.co/BHpTV58/qoutes.png'/>
                 <div className='project-description'>
                     <div className='text'><div className='project-title'>Quote Machine</div>
@@ -60,7 +60,7 @@ const Portfolio = () => {
                      </div>
                 </div>
             </div>
-            <div className='project-container' data-aos="fade-right">
+            <div className='project-container' data-aos="zoom-in-up">
                  <img  alt='project' src='https://i.ibb.co/r6wNDWs/pomodoro.png'/>
                 <div className='project-description'>
                   <div className='text'><div className='project-title'>Pomodoro Clock</div>
@@ -72,7 +72,7 @@ const Portfolio = () => {
                   </div>
                 </div>   
             </div>
-            <div className='project-container' data-aos="fade-left">
+            <div className='project-container' data-aos="zoom-in-up">
                  <img alt='project' src='https://i.ibb.co/DkNMSRN/jscalc.png'/>
               <div className='project-description'>
                   <div className='text'>
