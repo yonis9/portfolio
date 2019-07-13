@@ -10,8 +10,8 @@ const About = () => {
             <div id='aboutme' >
                 <h1 data-aos="fade-right">ABOUT</h1>
                 <div className='border' data-aos="fade-right"></div>
-                <p><span data-aos="fade-right">I am a self-taught web developer from Israel. I create responsive high-quality websites and web applications.</span>
-                <span data-aos="fade-right" data-aos-delay="100">I Regularly look to improve my skills and leran new ones, and be up to date with technology.</span>
+                <p><span data-aos="fade-right">I am a self-taught web developer from Israel. I create responsive high-quality websites and web applications. </span>
+                <span data-aos="fade-right" data-aos-delay="100">I Regularly look to improve my skills and leran new ones, and be up to date with technology. </span>
                 <span data-aos="fade-right" data-aos-delay="200">I am naturally curious and highly motivated to work as a web developer.</span></p>
             </div>
             <div id='skills'>
