@@ -53,7 +53,7 @@ class Contact extends Component  {
         })
         .then(response => response.json())
         .then(data => {
-            if(data.Error || !data.accepted.length) {
+            if(data.Error || !data.accepted) {
                 this.setState({responseMessage: {
                     success: false,
                    message: 'An Error Has Been Occured'}
