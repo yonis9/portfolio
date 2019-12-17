@@ -51,7 +51,7 @@ const Home = ( { openNav, windowWidth } ) => {
               : null    
                 }
           <h1 className='tracking-in-expand'>Hi, I'm <span>Yoni.</span> </h1>
-          <p className='text-focus-in' id='desc'>A Full Stack Web Developer</p> 
+          <p className='text-focus-in' id='desc'>A Full-Stack Web Developer</p> 
 
           <div className='slide-bottom'><NavLink
                smooth  to="/#about"
