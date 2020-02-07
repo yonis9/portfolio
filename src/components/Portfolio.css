@@ -15,7 +15,7 @@
     grid-gap: 0;
   justify-content: center;
    display: grid;
-   grid-template-columns: repeat(2, 350px);
+   grid-template-columns: repeat(3, 350px);
 }
 
 .project-container {
