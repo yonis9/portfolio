@@ -36,7 +36,6 @@ class App extends Component {
     })
 
     window.addEventListener('scroll', this.handleScroll)
-    console.log(this.state)
   }
 
   componentWillUnmount() {
@@ -107,7 +106,6 @@ class App extends Component {
 
 
   render () {
-    console.log(this.state)
     const { isMobileNavOpen, windowWidth } = this.state;
     return (
       <div  onScroll={this.handleScroll}>

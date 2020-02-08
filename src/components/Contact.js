@@ -18,8 +18,6 @@ class Contact extends Component  {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        console.log(prevState);
-        console.log(this.state)
         if(this.state.responseMessage.success !== '' ){
             window.setTimeout(  () => {
 
