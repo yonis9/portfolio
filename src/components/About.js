@@ -1,10 +1,58 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './About.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import Resume from '../Resume.pdf'
+import Skill from './Skill';
 
 const About = () => {
+    const [skills] = useState([
+        {
+            name: 'HTML',
+            delay: 0
+        },
+        {
+            name: 'CSS',
+            delay: 50
+        },
+        {
+            name: 'Javascript',
+            delay: 100
+        },
+        {
+            name: 'Bootstarp',
+            delay: 150
+        },
+        {
+            name: 'React',
+            delay: 200
+        },
+        {
+            name: 'Redux',
+            delay: 250
+        },
+        {
+            name: 'Node.js',
+            delay: 300
+        },
+        {
+            name:'Express.js',
+            delay: 350
+        },
+        {
+            name: 'Git',
+            delay: 400
+        },
+        {
+            name: 'PostgreSQL',
+            delay: 450
+        },
+        {
+            name: 'MongoDB',
+            delay: 500
+        }
+
+    ])
     return (
         <div id='about'>
             <div id='aboutme' >
@@ -19,45 +67,11 @@ const About = () => {
                 <h1 data-aos="fade-right">SKILLS</h1>
                 <div className='border' data-aos="fade-right"></div>
                 
-                <div id='skills-con' >
-
-                    <div className="center" data-aos="flip-left">
-                        <div className="hexagon"><span>HTML</span></div>
-                    </div>
-                    <div className="center"  data-aos="flip-left" data-aos-delay="50">
-                        <div className="hexagon"><span>CSS</span></div>
-                    </div>
-                    <div className="center" data-aos="flip-left" data-aos-delay="100">
-                        <div className="hexagon"><span>JavaScript</span></div>
-                    </div>
-                    <div className="center" data-aos="flip-left" data-aos-delay="150">
-                    <div className="hexagon"><span>Bootstrap</span></div>
-                    </div>
-                    <div className="center" data-aos="flip-left" data-aos-delay="200">
-                    <div className="hexagon"><span>React</span></div>
-                    </div>
-                    <div className="center" data-aos="flip-left" data-aos-delay="250">
-                    <div className="hexagon"><span>Redux</span></div>
-                    </div>
-                    <div className="center" data-aos="flip-left" data-aos-delay="300">
-                    <div className="hexagon"><span>Node.js</span></div>
-                    </div>
-                    <div className="center" data-aos="flip-left" data-aos-delay="350">
-                    <div className="hexagon"><span>Express.js</span></div>
-                    </div>
-                    <div className="center"   data-aos="flip-right" data-aos-delay="400">
-                    <div className="hexagon"><span>Git</span></div>
-                    </div>
-                    <div className="center" data-aos="flip-left" data-aos-delay="450">
-                    <div className="hexagon"><span>NPM</span></div>
-                    </div>
-                    <div className="center" data-aos="flip-left" data-aos-delay="500">
-                    <div className="hexagon"><span>PostgreSQL</span></div>
-                    </div>
-                    <div className="center" data-aos="flip-left" data-aos-delay="550">
-                    <div className="hexagon"><span>MongoDB</span></div>
-                    </div>
-                    </div>
+                <div id='skills-con'>
+                    {
+                        skills.map(({ name, delay }) => <Skill skillName={name} delay={delay}/>)
+                    }
+                </div>
             </div>
             <div id='resume'>
               <h1 data-aos="fade-right">RESUME</h1>
