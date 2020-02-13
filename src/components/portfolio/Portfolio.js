@@ -1,9 +1,9 @@
 import React from 'react';
 import './Portfolio.css';
 
-import Project from './Project';
+import Project from '../project/Project';
 
-import { PROJECTS_DATA } from '../projects-data'
+import { PROJECTS_DATA } from './projects-data'
 
 
 const Portfolio = () => {

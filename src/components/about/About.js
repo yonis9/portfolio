@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Resume from './Resume'
-import AboutMe from './AboutMe'
-import Skills from './Skills';
+import Resume from '../resume/Resume'
+import AboutMe from '../about-me/AboutMe'
+import Skills from '../skills/Skills';
 
 import './About.css';
 

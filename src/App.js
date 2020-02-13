@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import Home from './components/home/Home';
+import Navbar from './components/navbar/Navbar';
+import About from './components/about/About';
+import Portfolio from './components/portfolio/Portfolio';
+import Contact from './components/contact/Contact';
 import AOS from 'aos';
 import { BrowserRouter as Router} from "react-router-dom";
 

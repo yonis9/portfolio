@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import SKILL_DATA from'./skills.data';
 
-import Skill from './Skill';
+import Skill from '../skill/Skill';
 
 const Skills = () => {
     const [skills] = useState(SKILL_DATA);

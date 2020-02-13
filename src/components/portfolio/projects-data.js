@@ -1,5 +1,5 @@
-import movieImg from './images/movies.png';
-import wheatherImg from './images/wheather2.png' 
+import movieImg from '../../images/movies.png';
+import wheatherImg from '../../images/wheather2.png' 
 
 export const PROJECTS_DATA = [
     {   id: 1,
