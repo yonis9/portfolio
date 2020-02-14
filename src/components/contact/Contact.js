@@ -29,16 +29,8 @@ class Contact extends Component  {
         }
     }
 
-    onNameChange = (e) => {
-        this.setState({name: e.target.value})
-    }
-
-    onEmailChange = (e) => {
-        this.setState({email: e.target.value})
-    }
-
-    onMessageChange = (e) => {
-        this.setState({message: e.target.value})
+    onInputChange = (e) => {
+        this.setState({[e.target.name]: e.target.value})
     }
 
     onSubmit = (e) => {
@@ -51,6 +43,7 @@ class Contact extends Component  {
         })
         .then(response => response.json())
         .then(data => {
+            console.log(data)
             if(data.Error || !data.accepted) {
                 this.setState({responseMessage: {
                     success: false,
@@ -102,9 +95,9 @@ class Contact extends Component  {
                 
                 }
                 <form id='send-message' data-aos="zoom-in-up" onSubmit={this.onSubmit}>
-                    <input onChange={this.onNameChange} type='text' placeholder='Name' required />
-                    <input onChange={this.onEmailChange}type='email' placeholder='Email' required/>
-                    <textarea onChange={this.onMessageChange} rows="10" cols="50" placeholder='Your Message' required>
+                    <input name='name' onChange={this.onInputChange} type='text' placeholder='Name' required />
+                    <input name='email' onChange={this.onInputChange}type='email' placeholder='Email' required/>
+                    <textarea name='message' onChange={this.onInputChange} rows="10" cols="50" placeholder='Your Message' required>
                     </textarea>
                     <button type='submit'>SUBMIT</button>
 
