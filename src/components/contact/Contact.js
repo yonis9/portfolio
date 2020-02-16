@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+
+import ContactForm from '../contact-form/ContactForm';
+import ContactIcons from '../contact-icons/ContactIcons';
+
 import './Contact.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Contact extends Component  {
     constructor() {
@@ -43,7 +46,7 @@ class Contact extends Component  {
         })
         .then(response => response.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
             if(data.Error || !data.accepted) {
                 this.setState({responseMessage: {
                     success: false,
@@ -94,27 +97,8 @@ class Contact extends Component  {
                     : null
                 
                 }
-                <form id='send-message' data-aos="zoom-in-up" onSubmit={this.onSubmit}>
-                    <input name='name' onChange={this.onInputChange} type='text' placeholder='Name' required />
-                    <input name='email' onChange={this.onInputChange}type='email' placeholder='Email' required/>
-                    <textarea name='message' onChange={this.onInputChange} rows="10" cols="50" placeholder='Your Message' required>
-                    </textarea>
-                    <button type='submit'>SUBMIT</button>
-
-                </form>
-
-
-                <div className='icon-container'>
-                    <a href='https://github.com/yonis9' target='_blank' rel="noopener noreferrer"><div className='icon-social'>
-                        <FontAwesomeIcon icon={['fab', 'github']} size='2x' />
-                    </div> </a>
-                    <a href='https://www.linkedin.com/in/yonisisso/' target='_blank' rel="noopener noreferrer">  <div className='icon-social'>
-                        <FontAwesomeIcon icon={['fab', 'linkedin']} size='2x'/>
-                    </div></a>
-                </div>
-                <p>Made By <span>Yoni Sisso</span>  ©2019</p>
-            
-                
+                <ContactForm  onInputChange={this.onInputChange} onSubmit={this.onSubmit} />
+                <ContactIcons />           
             </div>
         )
     }
