@@ -4,6 +4,7 @@ import ContactForm from '../contact-form/ContactForm';
 import ContactIcons from '../contact-icons/ContactIcons';
 
 import './Contact.css';
+import Spinner from '../spinner/Spinner';
 
 class Contact extends Component  {
     constructor() {
@@ -14,8 +15,9 @@ class Contact extends Component  {
             message: '',
             responseMessage: {
                 success: '',
-                message: ''
-             }
+                message: '',
+             },
+            loading: false
 
         }
     }
@@ -38,6 +40,7 @@ class Contact extends Component  {
 
     onSubmit = (e) => {
         e.preventDefault()
+        this.setState({ loading: true })
         const { name, email, message } = this.state;
         fetch('https://thawing-ocean-91778.herokuapp.com/message', {
             method: 'post',
@@ -48,14 +51,21 @@ class Contact extends Component  {
         .then(data => {
             // console.log(data)
             if(data.Error || !data.accepted) {
-                this.setState({responseMessage: {
-                    success: false,
-                   message: 'An Error Has Been Occured'}
+                this.setState({
+                    responseMessage: {
+                        success: false,
+                        message: 'An Error Has Been Occured'
+                    },
+                    loading: false
                 })
             } else  {
-                this.setState({responseMessage: {
-                    success: true,
-                   message: 'Your Message Has Been Sent Successfully'}})
+                this.setState({
+                    responseMessage: {
+                        success: true,
+                        message: 'Your Message Has Been Sent Successfully'
+                    },
+                    loading: false
+                })
             }
         })
     }
@@ -63,39 +73,21 @@ class Contact extends Component  {
 
 
     render() {
-        const { responseMessage } = this.state;
-        let style;
-        if(responseMessage.success) {
-            style= { 
-                width: '350px',
-                color: '#28a745',
-                border: '2px solid #28a745',
-                height: '25px',
-                background: '#cdf2d5',
-                borderRadius: '5px'
-
-             }
-        } else {
-            style= { 
-                width: '350px',
-                color: '#dc3545',
-                border: '2px solid #dc3545',
-                height: '25px',
-                background: '#ffced2',
-                borderRadius: '5px'
-
-             }
-        }
+        const { responseMessage, loading } = this.state;
+         
         return(
             <div id='contact'>
+              
                 <div id='n3'></div>
                 <h1 data-aos="fade-left">CONTACT</h1>
                 <div className='border' data-aos="fade-right"></div>
-                {
+                {   
+                    loading ? <Spinner /> :
                     responseMessage.message.length ?
-                        <div style={style}>{responseMessage.message}</div>
+                        <div className={`${responseMessage.success ? 'success' : 'failure'}`}>
+                            {responseMessage.message}
+                        </div>
                     : null
-                
                 }
                 <ContactForm  onInputChange={this.onInputChange} onSubmit={this.onSubmit} />
                 <ContactIcons />           
