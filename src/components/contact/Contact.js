@@ -77,7 +77,6 @@ class Contact extends Component  {
          
         return(
             <div id='contact'>
-              
                 <div id='n3'></div>
                 <h1 data-aos="fade-left">CONTACT</h1>
                 <div className='border' data-aos="fade-right"></div>
