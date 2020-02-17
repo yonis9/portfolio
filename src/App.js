@@ -67,10 +67,10 @@ class App extends Component {
     var nav3 =  document.getElementById("nav3").querySelector('a');
     var nav4 =  document.getElementById("nav4").querySelector('a');
 
-    var top1 =  document.getElementById("home").offsetTop -50;
-    var top2 = document.getElementById("about").offsetTop -50;
-    var top3 = document.getElementById("portfolio").offsetTop -50;
-    var top4 = document.getElementById("contact").offsetTop -50
+    var top1 =  document.getElementById("home").offsetTop -65;
+    var top2 = document.getElementById("about").offsetTop -65;
+    var top3 = document.getElementById("portfolio").offsetTop -65;
+    var top4 = document.getElementById("contact").offsetTop -65
 
     
 
@@ -79,9 +79,7 @@ class App extends Component {
       nav2.style.color = '#f2f2f2'
       nav3.style.color = '#f2f2f2';
       nav4.style.color = '#f2f2f2';
-    
-
-
+  
     } else if (scrollPos >= top2 && scrollPos < top3) {
       nav1.style.color = '#f2f2f2';
       nav2.style.color = '#95C623'
