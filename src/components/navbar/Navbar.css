@@ -33,11 +33,6 @@
     width: 100%;
   }
 
-  .selected {
-    color: #95C623;
-    transition: 0.5s;
-  }
-
 
 @media only screen and (max-width: 767px) {
     .navbar {

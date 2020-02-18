@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
-import './App.css';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import {faFileAlt, faBars } from '@fortawesome/free-solid-svg-icons'
+import { BrowserRouter as Router} from "react-router-dom";
+import AOS from 'aos';
+
+
 import Home from './components/home/Home';
 import Navbar from './components/navbar/Navbar';
 import About from './components/about/About';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
-import AOS from 'aos';
-import { BrowserRouter as Router} from "react-router-dom";
 
+import './App.css';
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import {faFileAlt, faBars } from '@fortawesome/free-solid-svg-icons'
 library.add(fab, faFileAlt, faBars)
-
 
 class App extends Component {
   constructor() {
@@ -21,16 +22,35 @@ class App extends Component {
     this.state = {
       navSticky: 0,
       windowWidth: window.innerWidth,
-      isMobileNavOpen: false
+      isMobileNavOpen: false,
+      homePosition: 0,
+      aboutPosition: 0,
+      portfolioPosition: 0,
+      contactPosition: 0,
+      colors : {
+        home: '',
+        about: '',
+        portfolio: '',
+        contact: ''
+      }
     }
   }
 
   componentDidMount () {
+    const homePosition =  document.getElementById("home").offsetTop - 65;
+    const aboutPosition = document.getElementById("about").offsetTop - 65;
+    const portfolioPosition = document.getElementById("portfolio").offsetTop - 65;
+    const contactPosition = document.getElementById("contact").offsetTop - 65;
+
+    this.setState({ homePosition, aboutPosition, portfolioPosition, contactPosition })
+
+
     this.setState({ navSticky: document.getElementsByClassName("navbar")[0].offsetTop })
     AOS.init({
       easing: 'ease-in-quad',
       once: true
     });
+
     window.addEventListener('resize',() => {
       this.setState({windowWidth: window.innerWidth})
     })
@@ -51,65 +71,68 @@ class App extends Component {
   }
 
   handleScroll = (e) => {
-    var scrollPos = window.pageYOffset;
+    const regColor = '#f2f2f2';
+    const focusedColor = '#95C623';
+    let scrollPos = window.pageYOffset;
     const nav  = document.getElementsByClassName("navbar")[0];
-    console.log(this.state.navSticky)
     if (scrollPos > this.state.navSticky) {
       nav.classList.add("sticky");
     } else {
       nav.classList.remove("sticky");
     }
 
+    const { homePosition, aboutPosition, portfolioPosition, contactPosition } = this.state;
 
-    var nav1 = document.getElementById("nav1").querySelector('a');
-    var nav2 = document.getElementById("nav2").querySelector('a');
-
-    var nav3 =  document.getElementById("nav3").querySelector('a');
-    var nav4 =  document.getElementById("nav4").querySelector('a');
-
-    var top1 =  document.getElementById("home").offsetTop -65;
-    var top2 = document.getElementById("about").offsetTop -65;
-    var top3 = document.getElementById("portfolio").offsetTop -65;
-    var top4 = document.getElementById("contact").offsetTop -65
-
-    
-
-    if (scrollPos >= top1 && scrollPos < top2) {
-      nav1.style.color = '#95C623';
-      nav2.style.color = '#f2f2f2'
-      nav3.style.color = '#f2f2f2';
-      nav4.style.color = '#f2f2f2';
-  
-    } else if (scrollPos >= top2 && scrollPos < top3) {
-      nav1.style.color = '#f2f2f2';
-      nav2.style.color = '#95C623'
-      nav3.style.color = '#f2f2f2';
-      nav4.style.color = '#f2f2f2';
+    if (scrollPos >= homePosition && scrollPos < aboutPosition) {
+     this.setState({ colors: {
+      home: focusedColor,
+      about: regColor,
+      portfolio: regColor,
+      contact: regColor
+     }
+    })
+    } else if (scrollPos >= aboutPosition && scrollPos < portfolioPosition) {
+      this.setState({ colors: {
+        home: regColor,
+        about: focusedColor,
+        portfolio: regColor,
+        contact: regColor
+       }
+      })
     }
-     else if (scrollPos >= top3 && scrollPos < top4) {
-      nav1.style.color = '#f2f2f2';
-      nav2.style.color = '#f2f2f2'
-      nav3.style.color = '#95C623';
-      nav4.style.color = '#f2f2f2';
-    } else if (scrollPos >= top4) {
-      nav1.style.color = '#f2f2f2';
-      nav2.style.color = '#f2f2f2'
-      nav3.style.color = '#f2f2f2';
-      nav4.style.color = '#95C623';
+     else if (scrollPos >= portfolioPosition && scrollPos < contactPosition) {
+      this.setState({ colors: {
+        home: regColor,
+        about: regColor,
+        portfolio: focusedColor,
+        contact: regColor
+       }
+      })
+    } else if (scrollPos >= contactPosition) {
+      this.setState({ colors: {
+        home: regColor,
+        about: regColor,
+        portfolio: regColor,
+        contact: focusedColor
+       }
+      })
     }
-  
   }
 
 
 
 
   render () {
-    const { isMobileNavOpen, windowWidth } = this.state;
+    const { isMobileNavOpen, windowWidth, colors } = this.state;
     return (
       <div  onScroll={this.handleScroll}>
         <Router>
           <Home openNav={this.openNav} windowWidth={windowWidth}/>
-          <Navbar isMobileNavOpen={isMobileNavOpen} closeMobileNav={this.closeMobileNav}/>
+          <Navbar 
+          isMobileNavOpen={isMobileNavOpen}
+          closeMobileNav={this.closeMobileNav}
+          colors={colors}
+          />
           <About />
           <Portfolio />
           <Contact />
