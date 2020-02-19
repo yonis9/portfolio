@@ -1,3 +1,7 @@
+My protfolio code. SPA cretad with create-react-app.
+You can see the live version here - https://yonis9.github.io/portfolio/
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
