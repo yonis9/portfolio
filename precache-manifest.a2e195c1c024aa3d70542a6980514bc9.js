@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e6858872cd28cd3b9c43ef8d9a4b9b03",
+    "revision": "b15aba4e1aad0d45afbf5eba5c8c47d2",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "500e4e0d70c06bd71ec3",
+    "revision": "a7d504486633bb7e7b01",
     "url": "/portfolio/static/css/main.4942dbb1.chunk.css"
   },
   {
@@ -12,16 +12,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.fa5cd96d.chunk.js"
   },
   {
-    "revision": "500e4e0d70c06bd71ec3",
-    "url": "/portfolio/static/js/main.e7297298.chunk.js"
+    "revision": "a7d504486633bb7e7b01",
+    "url": "/portfolio/static/js/main.dac04d25.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "8c832dc1d7f17b10ff757ab13c79653e",
-    "url": "/portfolio/static/media/Resume.8c832dc1.pdf"
+    "revision": "6383a4535e1317a08a593ad6df03ff58",
+    "url": "/portfolio/static/media/CV - Yoni Sisso.6383a453.pdf"
   },
   {
     "revision": "ad85969c09eb546dba47980a53e7fe8c",
