@@ -7,7 +7,7 @@ export const PROJECTS_DATA = [
         id: 9,
         title: 'Crwn Shop Project',
         description: 'A full-stack e-commerce application similar to Shopify using React, Redux, React Hooks, React Router, Firebase, Redux-Saga and Stripe API.',
-        tech: 'Technologies used: ReactJS, Redux, HTML, SCSS, Firebase.',
+        tech: 'Technologies used: ReactJS, Redux, HTML, SCSS and Firebase.',
         imageUrl: crwnShopImg,
         link: 'https://crwnshoplive.herokuapp.com/'
     },
@@ -21,24 +21,24 @@ export const PROJECTS_DATA = [
     {   id: 7,
         title: 'Celebritiy Face Recognition',
         description: 'A full-stack web application that recognize celebrities faces using Machine Learning API.',
-        tech: 'Technologies used: ReactJS, HTML, CSS, Node.js, Express.js and PostgreSQL.',
+        tech: 'Technologies used: ReactJS, Redux, HTML, CSS, Node.js, Express.js and PostgreSQL.',
         imageUrl: 'https://i.ibb.co/fnNm7Zx/face.png',
         link: 'https://smartbrainrec.herokuapp.com/'
     },
+    {   id:6,
+        title: 'Wheather App',
+        description: "A React app that shows the weather forecast for 5 days based on your detected location or your input search using AccuWeather API. Location also can be saved on favorites page",
+        tech: 'Technologies used: ReactJS, Redux, HTML and CSS.',
+        imageUrl: wheatherImg,
+        link: 'https://yonis9.github.io/Weather-App/'
+    },
     {   
-        id:6,
+        id:5,
         title: 'Movies App',
         description: 'A React app that shows movies using "The Movie DB" API. People can read about a movie and rate it.',
         tech: 'Technologies used: ReactJS, HTML and CSS.',
         imageUrl: movieImg,
         link: 'https://yonis9.github.io/MoviesApp/'
-    },
-    {   id:5,
-        title: 'Wheather App',
-        description: "A React app that detects your location and shows the weather report for 5 days, using 'OpenWeatherMap' API, based on the location.",
-        tech: 'Technologies used: ReactJS, HTML and CSS.',
-        imageUrl: wheatherImg,
-        link: 'https://yonis9.github.io/WeatherApp/'
     },
     {   id:4,
         title: 'Robofriends Project',
