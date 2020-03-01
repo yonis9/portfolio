@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4942dbb1.chunk.css",
-    "main.js": "/portfolio/static/js/main.dac04d25.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.dac04d25.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.56c0d3bf.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.56c0d3bf.chunk.js.map",
     "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
     "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
     "static/js/2.fa5cd96d.chunk.js": "/portfolio/static/js/2.fa5cd96d.chunk.js",
     "static/js/2.fa5cd96d.chunk.js.map": "/portfolio/static/js/2.fa5cd96d.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.a2e195c1c024aa3d70542a6980514bc9.js": "/portfolio/precache-manifest.a2e195c1c024aa3d70542a6980514bc9.js",
+    "precache-manifest.9dcb90a554f936c4ea987c4d5e9eb6df.js": "/portfolio/precache-manifest.9dcb90a554f936c4ea987c4d5e9eb6df.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.4942dbb1.chunk.css.map": "/portfolio/static/css/main.4942dbb1.chunk.css.map",
     "static/media/CV - Yoni Sisso.pdf": "/portfolio/static/media/CV - Yoni Sisso.6383a453.pdf",
     "static/media/crwn-shop.png": "/portfolio/static/media/crwn-shop.ad85969c.png",
     "static/media/movies.png": "/portfolio/static/media/movies.3dfe1a9a.png",
-    "static/media/wheather2.png": "/portfolio/static/media/wheather2.d2c4c09e.png"
+    "static/media/wheather2.png": "/portfolio/static/media/wheather2.a9165aa8.png"
   }
 }
