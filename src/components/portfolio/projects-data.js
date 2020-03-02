@@ -27,7 +27,7 @@ export const PROJECTS_DATA = [
     },
     {   id:6,
         title: 'Wheather App',
-        description: "A React app that shows the weather forecast for 5 days based on your detected location or your input search using AccuWeather API. Location also can be saved on favorites page",
+        description: "A React app that shows the weather forecast for 5 days based on your detected location or your input search using AccuWeather API. Location also can be saved on favorites page.",
         tech: 'Technologies used: ReactJS, Redux, HTML and CSS.',
         imageUrl: wheatherImg,
         link: 'https://yonis9.github.io/Weather-App/'
