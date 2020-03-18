@@ -52,6 +52,10 @@
       color: #95C623;
   }
 
+  .intro-container {
+    z-index: 1;
+  }
+
 
   .slide-bottom {
     z-index: 1;
