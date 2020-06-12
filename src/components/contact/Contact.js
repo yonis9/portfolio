@@ -45,7 +45,7 @@ class Contact extends Component  {
         fetch('https://thawing-ocean-91778.herokuapp.com/message', {
             method: 'post',
             headers:{"Content-Type": 'application/json', 'Requested-With': 'XMLHttpRequest'},
-			body: JSON.stringify({ name, from: email, message	})
+			body: JSON.stringify({ name, from: email, message })
         })
         .then(response => response.json())
         .then(data => {
