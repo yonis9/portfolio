@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d85ec17d.chunk.css",
-    "main.js": "/portfolio/static/js/main.382ef95a.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.382ef95a.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.3a062091.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.3a062091.chunk.js.map",
     "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
     "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
-    "static/js/2.fa5cd96d.chunk.js": "/portfolio/static/js/2.fa5cd96d.chunk.js",
-    "static/js/2.fa5cd96d.chunk.js.map": "/portfolio/static/js/2.fa5cd96d.chunk.js.map",
+    "static/js/2.42a24056.chunk.js": "/portfolio/static/js/2.42a24056.chunk.js",
+    "static/js/2.42a24056.chunk.js.map": "/portfolio/static/js/2.42a24056.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.90c6e4621c4d6589fef4d0252963d6d2.js": "/portfolio/precache-manifest.90c6e4621c4d6589fef4d0252963d6d2.js",
+    "precache-manifest.2a531cd50fa4b92d072a5aa8e47c2881.js": "/portfolio/precache-manifest.2a531cd50fa4b92d072a5aa8e47c2881.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.d85ec17d.chunk.css.map": "/portfolio/static/css/main.d85ec17d.chunk.css.map",
     "static/media/CV - Yoni Sisso.pdf": "/portfolio/static/media/CV - Yoni Sisso.6383a453.pdf",
+    "static/media/calculator.png": "/portfolio/static/media/calculator.3583330e.png",
     "static/media/crwn-shop.png": "/portfolio/static/media/crwn-shop.ad85969c.png",
     "static/media/movies.png": "/portfolio/static/media/movies.3dfe1a9a.png",
     "static/media/wheather2.png": "/portfolio/static/media/wheather2.a9165aa8.png"
