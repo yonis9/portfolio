@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b9350bec12438301b7725a3d5c83f8fd",
+    "revision": "19776615517d052aabf63791b7ec850a",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "f56d5a037ba7eceebaed",
+    "revision": "376f46588a60c4f48883",
     "url": "/portfolio/static/css/main.d85ec17d.chunk.css"
   },
   {
-    "revision": "a92abd3d52dcc5c3b012",
-    "url": "/portfolio/static/js/2.42a24056.chunk.js"
+    "revision": "65d935d9ee7042f6d7c0",
+    "url": "/portfolio/static/js/2.2f1beadc.chunk.js"
   },
   {
-    "revision": "f56d5a037ba7eceebaed",
-    "url": "/portfolio/static/js/main.3a062091.chunk.js"
+    "revision": "376f46588a60c4f48883",
+    "url": "/portfolio/static/js/main.70d279ad.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3583330e942cc07363b392b919edf25e",
     "url": "/portfolio/static/media/calculator.3583330e.png"
+  },
+  {
+    "revision": "a67db6a051407817110820e8319d35b7",
+    "url": "/portfolio/static/media/covid19.a67db6a0.png"
   },
   {
     "revision": "ad85969c09eb546dba47980a53e7fe8c",
